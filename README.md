@@ -289,3 +289,45 @@ La implementación respeta todas las relaciones definidas en el diagrama de clas
 - ✅ Manejo de errores
 - ✅ Logging de operaciones
 
+## 🧩 Componentes del Sistema
+
+### Componentes identificados:
+
+**Componente de Gestión de Clientes**
+- Entidades: Cliente
+- Responsabilidad: Administrar la información de los clientes del sistema
+
+**Componente de Gestión de Productos**
+- Entidades: Producto
+- Responsabilidad: Manejar el catálogo de productos disponibles
+
+**Componente de Gestión de Proveedores**
+- Entidades: Proveedor
+- Responsabilidad: Administrar la información de los proveedores
+
+**Componente de Gestión de Vendedores**
+- Entidades: Vendedor
+- Responsabilidad: Gestionar el personal de ventas
+
+**Componente de Gestión de Ventas**
+- Entidades: Venta
+- Responsabilidad: Procesar y registrar las transacciones de venta
+
+**Componente de Gestión de Pedidos**
+- Entidades: Pedido
+- Responsabilidad: Administrar los pedidos realizados
+
+**Componente de Gestión de Entregas**
+- Entidades: Entrega
+- Responsabilidad: Controlar el proceso de entrega de productos
+
+### Relaciones entre componentes:
+
+- **Cliente ↔ Venta**: Los clientes realizan ventas
+- **Vendedor ↔ Venta**: Los vendedores procesan las ventas
+- **Producto ↔ Venta**: Los productos son vendidos en las transacciones
+- **Producto ↔ Pedido**: Los productos pueden ser solicitados en pedidos
+- **Proveedor ↔ Producto**: Los proveedores suministran productos
+- **Pedido ↔ Entrega**: Los pedidos generan entregas
+- **Cliente ↔ Entrega**: Los clientes reciben las entregas
+
